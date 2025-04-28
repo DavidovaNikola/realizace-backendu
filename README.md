@@ -1,16 +1,43 @@
-# Meal Plan Backend
+O projektu
 
-This project is a backend service for the Meal Plan application.  
-It allows users to create, edit, save, and view weekly meal plans.
+Tento projekt je součástí úkolu do předmětu [název předmětu], kde bylo cílem vytvořit základ backendové části pro aplikaci na plánování jídel.
+Projekt je aktuálně připraven ve struktuře složek a souborů, ale neobsahuje ještě plnou logiku funkcí.
 
-## How to run
+Struktura složek
 
-1. Install dependencies: npm install
-2. Start the server: npm start
+controllers/ – soubory, kde bude napsaná hlavní logika pro jednotlivé operace (např. vytvoření plánu, úprava jídel...).
+
+- dao/ – zde budou funkce na práci s daty, jako je vytvoření, načtení, úprava nebo smazání záznamu.
+
+- routes/ – nastavení jednotlivých cest v aplikaci (např. /weeklyPlan/create).
+
+- validation/ – soubory pro kontrolu správnosti vstupních dat (DTOIn).
+
+- models/ – zatím prázdné, připraveno pro případné datové modely.
+
+- node_modules/ – složka s balíčky nainstalovanými přes npm.
+
+Jak spustit projekt
+
+Otevřít terminál ve složce projektu.
+
+Spustit příkaz npm install – tím se nainstalují všechny potřebné balíčky.
+
+Spustit příkaz npm start – tím se spustí server.
+
+Server běží na adrese http://localhost:3000/.
+
+Poznámky
+
+a/ Backend zatím obsahuje jen základní připravenou strukturu bez plné logiky.
+
+b/ Validace vstupních dat je připravená přes jednoduché DTOIn soubory.
+
+c/ Připojení k databázi zatím není implementováno, data by zatím byla jen v paměti.
+
+d/ Projekt je připraven na další rozšíření (dopsání DAO metod, Controllers a propojení s frontendem).
 
 
-The server will run on **http://localhost:3000**.
-    http://localhost:3000/weeklyPlan
     
 ## Main Endpoints
 
