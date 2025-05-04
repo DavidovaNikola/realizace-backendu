@@ -1,8 +1,3 @@
-O projektu
-
-Tento projekt je součástí úkolu do předmětu [název předmětu], kde bylo cílem vytvořit základ backendové části pro aplikaci na plánování jídel.
-Projekt je aktuálně připraven ve struktuře složek a souborů, ale neobsahuje ještě plnou logiku funkcí.
-
 Struktura složek
 
 controllers/ – soubory, kde bude napsaná hlavní logika pro jednotlivé operace (např. vytvoření plánu, úprava jídel...).
