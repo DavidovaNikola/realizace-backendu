@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🗂️ Realizace Backendu - Weekly Plan API  
 
 ---
@@ -7,6 +8,9 @@
   - `npx nodemon app.js` (automatický restart při změně kódu)
   - nebo: `node app.js` (bez restartu při změnách)
 - API běží na: `http://localhost:3000`
+=======
+Struktura složek
+>>>>>>> 121f004f9e2d9a52e85b08f4b5bdb5a174c8e8a8
 
 ---
 
