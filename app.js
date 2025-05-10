@@ -9,11 +9,11 @@ app.use(express.json());      // Umožním aplikaci pracovat s JSON daty v reque
 
 // 🛣️ Načítám routy
 const weeklyPlanRoutes = require("./routes/weeklyPlanRoutes");
+const mealAssignmentRoutes = require("./routes/mealAssignmentRoutes"); // ✅ Přidala jsem mealAssignmentRoutes
 
 // 🌐 Nastavuji prefix pro routy
-// Všechny cesty, které začínají "/weeklyPlan", se směrují do weeklyPlanRoutes.
-// Například: "/weeklyPlan/create" → povede do funkce createWeeklyPlan v controlleru.
 app.use("/weeklyPlan", weeklyPlanRoutes);
+app.use("/mealAssignment", mealAssignmentRoutes); // ✅ Přidala jsem tento řádek
 
 // 🚀 Spuštění serveru
 const PORT = 3000; // Nastavuji port, na kterém bude aplikace běžet
