@@ -1,0 +1,26 @@
+[
+  {
+    "id": "dpx9sublh",
+    "name": "ProteinWeek",
+    "isFavourite": true,
+    "meals": []
+  },
+  {
+    "id": "ghhcv0ts9",
+    "name": "DietWeek",
+    "isFavourite": false,
+    "meals": []
+  },
+  {
+    "id": "vwd3f8wiv",
+    "name": "MyFavouritePlan",
+    "isFavourite": false,
+    "meals": []
+  },
+  {
+    "id": "a7mormy9h",
+    "name": "TestPlanWeek",
+    "isFavourite": true,
+    "meals": []
+  }
+]

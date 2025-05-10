@@ -1,47 +1,36 @@
-O projektu
+# 🗂️ Realizace Backendu - Weekly Plan API  
 
-Tento projekt je součástí úkolu do předmětu [název předmětu], kde bylo cílem vytvořit základ backendové části pro aplikaci na plánování jídel.
-Projekt je aktuálně připraven ve struktuře složek a souborů, ale neobsahuje ještě plnou logiku funkcí.
+---
 
-Struktura složek
+## 🚀 Spuštění aplikace
+- Spouštím aplikaci příkazem:
+  - `npx nodemon app.js` (automatický restart při změně kódu)
+  - nebo: `node app.js` (bez restartu při změnách)
+- API běží na: `http://localhost:3000`
 
-controllers/ – soubory, kde bude napsaná hlavní logika pro jednotlivé operace (např. vytvoření plánu, úprava jídel...).
+---
 
-- dao/ – zde budou funkce na práci s daty, jako je vytvoření, načtení, úprava nebo smazání záznamu.
+## 🛣️ Routy  
+- `/weeklyPlan/create` → Vytvoření nového týdenního plánu (POST)
+- `/weeklyPlan/getAll` → Načtení všech existujících plánů (GET)
+- `/weeklyPlan/setFavourite` → Nastavení plánu jako oblíbený nebo zrušení oblíbenosti(PUT)
 
-- routes/ – nastavení jednotlivých cest v aplikaci (např. /weeklyPlan/create).
+---
 
-- validation/ – soubory pro kontrolu správnosti vstupních dat (DTOIn).
+## 🗄️ Struktura projektu  
+- **controllers/** → Obsahuje logiku zpracování požadavků (Controllers)
+- **dao/** → Obsahuje funkce pro čtení a zápis do JSON databáze (Data Access Object)
+- **routes/** → Definuje jednotlivé cesty API (Routes)
+- **app.js** → Hlavní vstupní bod aplikace
+- **weeklyPlanDatabase.json** → Místo, kde se ukládají všechny plány
 
-- models/ – zatím prázdné, připraveno pro případné datové modely.
+---
 
-- node_modules/ – složka s balíčky nainstalovanými přes npm.
-
-Jak spustit projekt
-
-Otevřít terminál ve složce projektu.
-
-Spustit příkaz npm install – tím se nainstalují všechny potřebné balíčky.
-
-Spustit příkaz npm start – tím se spustí server.
-
-Server běží na adrese http://localhost:3000/.
-
-Poznámky
-
-a/ Backend zatím obsahuje jen základní připravenou strukturu bez plné logiky.
-
-b/ Validace vstupních dat je připravená přes jednoduché DTOIn soubory.
-
-c/ Připojení k databázi zatím není implementováno, data by zatím byla jen v paměti.
-
-d/ Projekt je připraven na další rozšíření (dopsání DAO metod, Controllers a propojení s frontendem).
-
-
-    
-## Main Endpoints
-
-- POST `/weeklyPlan/create`
-- PUT `/mealAssignment/updateDelete`
-- PUT `/weeklyPlan/setFavourite`
-- GET `/weeklyPlan/get`
+## 🔎 Poznámky
+- JSON databáze je uložená ve složce `dao/`.
+- Když databázový soubor neexistuje, vytvoří se automaticky prázdný.
+- CRUD operace (Create, Read, Update, Delete) jsou v `weeklyPlanDao.js`.
+- Když přidám novou funkci do DAO, musím ji **exportovat** v `module.exports`.
+- Pokud se mi něco neukládá, zkontroluju, jestli mám:
+  - Správnou cestu k JSON souboru (`./dao/weeklyPlanDatabase.json`)
+  - Restartovaný server (`npx nodemon app.js` nebo `node app.js`)
