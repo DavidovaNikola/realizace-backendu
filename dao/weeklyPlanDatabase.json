@@ -68,7 +68,18 @@
         "day": "Monday",
         "mealType": "Lunch",
         "mealId": "meal-123"
+      },
+      {
+        "day": "Monday",
+        "mealType": "Lunch",
+        "mealId": "meal-123"
       }
     ]
+  },
+  {
+    "id": "no9yzzo0x",
+    "name": "MlecnyTyden",
+    "isFavourite": false,
+    "meals": []
   }
 ]
