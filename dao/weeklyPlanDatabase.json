@@ -3,7 +3,13 @@
     "id": "dpx9sublh",
     "name": "ProteinWeek",
     "isFavourite": true,
-    "meals": []
+    "meals": [
+      {
+        "day": "Monday",
+        "mealType": "Lunch",
+        "mealId": "meal-123"
+      }
+    ]
   },
   {
     "id": "ghhcv0ts9",
@@ -15,18 +21,54 @@
     "id": "vwd3f8wiv",
     "name": "MyFavouritePlan",
     "isFavourite": false,
-    "meals": []
+    "meals": [
+      {
+        "day": "Tuesday",
+        "mealType": "Breakfast",
+        "mealId": "Kuresrejzi"
+      }
+    ]
   },
   {
     "id": "a7mormy9h",
     "name": "TestPlanWeek",
     "isFavourite": true,
-    "meals": []
+    "meals": [
+      {
+        "day": "Friday",
+        "mealType": "Dinner",
+        "mealId": "Salat"
+      }
+    ]
   },
   {
     "id": "ed2ns0a7y",
     "name": "KureciTyden",
     "isFavourite": false,
+    "meals": [
+      {
+        "day": "Friday",
+        "mealType": "Dinner",
+        "mealId": "Kure"
+      }
+    ]
+  },
+  {
+    "id": "z8980933k",
+    "name": "HoveziTyden",
+    "isFavourite": true,
     "meals": []
+  },
+  {
+    "id": "qfrctxk07",
+    "name": "MlecnyTyden",
+    "isFavourite": true,
+    "meals": [
+      {
+        "day": "Monday",
+        "mealType": "Lunch",
+        "mealId": "meal-123"
+      }
+    ]
   }
 ]
